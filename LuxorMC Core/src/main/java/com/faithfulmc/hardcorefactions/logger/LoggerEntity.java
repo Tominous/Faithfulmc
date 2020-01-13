@@ -63,7 +63,7 @@ public class LoggerEntity extends EntityVillager {
         setPositionRotation(x, y, z, location.getYaw(), location.getPitch());
         fallDistance = player.getFallDistance();
         this.world.addEntity(this, CreatureSpawnEvent.SpawnReason.CUSTOM);
-        /*
+        
         PacketPlayOutSpawnEntityLiving entitySpawn = new PacketPlayOutSpawnEntityLiving(this);
         PacketContainer container = new PacketContainer(PacketType.Play.Server.SPAWN_ENTITY_LIVING, entitySpawn);
         for (org.bukkit.entity.Entity entity : getBukkitEntity().getNearbyEntities(15, 15, 15)) {
@@ -75,7 +75,7 @@ public class LoggerEntity extends EntityVillager {
                 }
             }
         }
-        */
+        
         retrack();
     }
 
