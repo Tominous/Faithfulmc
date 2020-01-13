@@ -374,7 +374,7 @@ public class HCF extends JavaPlugin {
         if (isMongo()) {
             executeMonititoredTask("Closing MongoDB Connection", mongoClient::close);
         }
-        //executeMonititoredTask("Unregistering configuration classes", this::unregisterConfiguration);
+        executeMonititoredTask("Unregistering configuration classes", this::unregisterConfiguration);
         mainThread = null;
         instance = null;
     }
